@@ -1,100 +1,64 @@
-/* DO NOT EDIT CSS CODE */
 
-@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light|Oswald|Permanent+Marker|Montserrat');
+/* 
+	STYLE.CSS:
+	One stylesheet to rule them all.
+	
+	selector { property:value }
+	
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great|Lato);
+
 body {
-  margin: 0;
-  background-color: #eee;
+  background-color: #5f5345;
 }
-
-html, h1, h2, p {
-  font-family: 'Shadows Into Light', cursive;
-  color: DarkRed;
-  font-size: 24px;
+ 
+.pageContainer {
+  width: 940px;
+  margin: 20px auto 0 auto;
+  padding: 20px;
+  background-color: #fff;
 }
-
-main > div > article > section > header > h2 {
-  color: #668284;
-  font-size: 24px;
+ 
+.imageContainer {
+  float: left;
+  width: 620px;
 }
-
-main > div > article > section > p {
-  font-size: 16px;
-}
-
-main > div > article > section > header > h2, 
-main > div > article > section p, 
-footer > div > nav > p {
-  text-align: center;
-  margin: 0;
-  padding: 10px;
-  font-family: 'Oswald', sans-serif;
-}
-
-main > div > article {
-  overflow: visible;
-}
-
-main > div > article > section {
-  margin-left: -200%;
-  width: 500%;
-  border-bottom: 3px solid #668284;
-}
-
-main > div > article > section:last-child {
-  border-bottom: none;
-}
-
-header > div > h1 {
-  text-align: center;
-  font-size: 70px;
-  margin: 0;
-  font-family: 'Permanent Marker', cursive;
-}
-
-header > div > nav {
-  margin: 0 0 10px 10px;
-}
-
-header > div > nav > a {
-  padding: 0 15px 10px 20px;
-  font-size: 16px;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  color: #493736;
-}
-
-header > div > nav a:hover {
-  color: #668284;
-}
-
-nav,
-div {
+ 
+.textContainer {
+  float: left;
   width: 300px;
-  margin: auto;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
-nav:after {
-  content: "";
+img {
+  width: 100%;
+}
+ 
+h1 {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 64px;
+  color: #8b1b00;
+}
+ 
+p, li {
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  color: #51473b;
+}
+
+
+
+
+/* ---- Advanced ---- */
+/* This tag is a bit advanced for this lesson,  
+   but is needed to wrap the pageContainer 
+   around any sized content that is floated within it. */
+
+.pageContainer:after { 
+  content: " ";
   display: table;
   clear: both;
 }
-
-main > div > article > section p {
-  color: #493736;
-}
-
-main > div {
-  overflow: hidden;
-  border: 3px solid #668284;
-  padding: 10px;
-  background-color: #B9D7D9;
-}
-
-footer > div > nav > p {
-  color: #668284;
-  font-size: 16px;
-}
-
-main > div > article > section > footer > p {
-  font-size: 16px;
-}
+ 
